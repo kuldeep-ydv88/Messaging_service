@@ -1,0 +1,13 @@
+package com.example.BulkSmsDemo;
+
+import lombok.Data;
+import org.springframework.boot.context.properties.ConfigurationProperties;
+import org.springframework.context.annotation.Configuration;
+
+@Data
+@ConfigurationProperties(prefix = "bulksms")
+public class BulkSmsConfig {
+    private String apiUrl;
+    private String apiKey;
+
+}
